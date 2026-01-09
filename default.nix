@@ -1,10 +1,10 @@
-slug: { pkgs }:
+slug:
+{ pkgs }:
 pkgs.stdenv.mkDerivation {
   name = "droid-sans-mono-${pkgs.lib.strings.toLower slug}-nerd-font";
-  srcs =
-    [
-      ./DroidSansMono${slug}.ttf
-    ];
+  srcs = [
+    ./DroidSansMono${slug}.ttf
+  ];
   nativeBuildInputs = [ pkgs.nerd-font-patcher ];
 
   unpackCmd = ''
