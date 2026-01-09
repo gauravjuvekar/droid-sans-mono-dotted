@@ -21,7 +21,7 @@
         droid-sans-slashed-package = droid-sans-func "Slashed" { pkgs = pkgs; };
       in
       {
-        packages = rec {
+        packages = {
           droid-sans-mono-dotted-nerdfont = droid-sans-dotted-package;
           droid-sans-mono-slashed-nerdfont = droid-sans-slashed-package;
         };
